@@ -5,6 +5,8 @@ body {
     margin: auto;
     color: #333;
     background-color: #f5dfd1;
+    overflow-x: hidden;
+
 
 }
 
@@ -120,4 +122,44 @@ h3 {
 
 #mainLeft {
     border-right: 1px solid #65743A;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+
+    body {
+        font-size: 14px;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 0.8em;
+    }
+
+    main {
+        display: block;
+        margin-top: 1.5em;
+    }
+
+    #about {
+        display: none;
+    }
+
+    #mainLeft {
+        border-right: none;
+        margin-bottom: 2em;
+    }
+
+    header {
+        margin: 1em 0;
+    }
 }
